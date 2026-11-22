@@ -1,0 +1,111 @@
+{
+  "name": "Takethy Photo (verified vocabulary)",
+  "description": "Personally verified prompt parts: camera (shot size / height / direction), numeric frame occupancy, gaze, expressions, body-part poses, capture devices, light. Collected and tested on a local Qwen-Image 2.1 stack, 2026-11-22/23.",
+  "version": "0.1",
+  "categories": {
+    "Camera - shot size": {
+      "Range": [
+        "extreme wide shot",
+        "wide shot",
+        "full body shot, head to toe visible",
+        "cowboy shot, framed from the knees up",
+        "medium shot, framed from the waist up",
+        "bust shot, framed from the chest up",
+        "close-up portrait",
+        "extreme close-up of the face"
+      ],
+      "Frame occupancy": [
+        "the subject occupies about 20 percent of the frame height",
+        "the subject occupies about 40 percent of the frame height",
+        "the subject occupies about 60 percent of the frame height",
+        "the subject occupies about 80 percent of the frame height",
+        "the subject fills the frame from the top edge to the bottom edge"
+      ]
+    },
+    "Camera - height and direction": {
+      "Height / tilt": [
+        "eye-level shot",
+        "slightly high angle",
+        "high angle looking down",
+        "slightly low angle",
+        "low angle looking up",
+        "bird's-eye view",
+        "worm's-eye view",
+        "slight dutch angle"
+      ],
+      "Direction": [
+        "front view",
+        "three-quarter view",
+        "side profile view",
+        "back view",
+        "over-the-shoulder shot",
+        "looking back over her shoulder"
+      ]
+    },
+    "Gaze": {
+      "Direction": [
+        "looking at the camera",
+        "looking slightly away from the camera",
+        "looking down",
+        "looking up",
+        "gaze fixed on the object in her hands",
+        "gaze drifting into the distance",
+        "eyes closed"
+      ],
+      "Note": [
+        "natural candid gaze, not posing for the camera"
+      ]
+    },
+    "Expression": {
+      "Faces": [
+        "soft gentle smile",
+        "bright laughing expression",
+        "calm serious expression",
+        "slightly surprised expression",
+        "pensive, thoughtful expression",
+        "sleepy relaxed expression",
+        "shy expression, glancing up",
+        "confident expression, chin slightly raised"
+      ]
+    },
+    "Pose - written by body parts": {
+      "Standing": [
+        "weight shifted onto her left leg, right knee relaxed, one hand resting on her waist",
+        "reaching her left hand up toward a high shelf, chin lifted, gaze on the object above",
+        "one hand touching her hair, chin slightly down, looking up",
+        "arms loosely crossed, weight on one leg",
+        "hands clasped behind her back, leaning slightly forward",
+        "holding the hem of her skirt with both hands"
+      ],
+      "Moving / sitting": [
+        "walking toward the camera mid-stride, arms swinging naturally, gaze ahead",
+        "sitting on a bench, leaning back on one hand, legs crossed at the ankles",
+        "sitting with knees together, hands resting on her lap",
+        "turning around mid-motion, hair swaying"
+      ]
+    },
+    "Capture device": {
+      "Devices": [
+        "shot on 35mm film",
+        "shot on a full-frame DSLR",
+        "shot on a compact digital camera with direct flash",
+        "shot on a 2000s feature phone camera",
+        "shot on a disposable camera",
+        "shot on an instant camera",
+        "smartphone selfie",
+        "shot on a studio camera"
+      ]
+    },
+    "Light and time": {
+      "Light": [
+        "soft morning light",
+        "golden hour sunlight",
+        "bright midday light",
+        "soft overcast light",
+        "window light from the left",
+        "warm indoor lamp light",
+        "dust motes dancing in a shaft of sunlight"
+      ]
+    }
+  }
+}
