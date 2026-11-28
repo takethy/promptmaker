@@ -1,7 +1,7 @@
 {
   "name": "Takethy Photo (verified vocabulary)",
-  "description": "Personally verified prompt parts: camera (shot size / height / direction), numeric frame occupancy, gaze, expressions, body-part poses, capture devices, light. Collected and tested on a local Qwen-Image 2.1 stack, 2026-11-22/23.",
-  "version": "0.1",
+  "description": "Personally verified prompt parts plus a shot-catalog supplement: camera (shot size / height / direction), numeric frame occupancy, gaze, expressions, body-part poses, capture devices, light. Base collected and tested on a local Qwen-Image 2.1 stack, 2026-11-22/23. Supplement 2026-11-28: camera-shot catalog (42 shot types + 6 keyword poses, circulating as the 'Camera Shot Collection' charts) merged in and deduplicated against the existing chips; supplement chips are catalog vocabulary, not yet individually verified.",
+  "version": "0.2",
   "categories": {
     "Camera - shot size": {
       "Range": [
@@ -12,7 +12,8 @@
         "medium shot, framed from the waist up",
         "bust shot, framed from the chest up",
         "close-up portrait",
-        "extreme close-up of the face"
+        "extreme close-up of the face",
+        "extreme close-up, eye close-up, fine detail"
       ],
       "Frame occupancy": [
         "the subject occupies about 20 percent of the frame height",
@@ -31,7 +32,12 @@
         "low angle looking up",
         "bird's-eye view",
         "worm's-eye view",
-        "slight dutch angle"
+        "slight dutch angle",
+        "waist-level shot, from waist height",
+        "knee-level shot, from knee height",
+        "ground-level shot, from ground level",
+        "aerial oblique shot, high-angle diagonal view",
+        "dutch angle, tilted composition"
       ],
       "Direction": [
         "front view",
@@ -39,7 +45,10 @@
         "side profile view",
         "back view",
         "over-the-shoulder shot",
-        "looking back over her shoulder"
+        "looking back over her shoulder",
+        "foot-end view, seen from the feet end",
+        "passing shot, candid look back",
+        "POV shot, first-person perspective"
       ]
     },
     "Gaze": {
@@ -82,6 +91,14 @@
         "sitting on a bench, leaning back on one hand, legs crossed at the ankles",
         "sitting with knees together, hands resting on her lap",
         "turning around mid-motion, hair swaying"
+      ],
+      "Keyword poses": [
+        "prone pose, lying on her stomach, chin on hands",
+        "kneeling, looking back over her shoulder",
+        "side-lying pose, head resting on one hand",
+        "cat pose, on all fours, back arched",
+        "back reveal, looking back over her shoulder",
+        "leaning against a wall, one knee bent"
       ]
     },
     "Capture device": {
@@ -105,6 +122,36 @@
         "window light from the left",
         "warm indoor lamp light",
         "dust motes dancing in a shaft of sunlight"
+      ]
+    },
+    "Lens and optical effects": {
+      "Effects": [
+        "wide-angle lens, spacious immersive view",
+        "telephoto lens, compressed background",
+        "bokeh, shallow depth of field, blurred background",
+        "lens flare, backlight glow",
+        "backlight silhouette, rim light",
+        "motion blur, dynamic movement"
+      ]
+    },
+    "Special viewpoints": {
+      "Viewpoints": [
+        "selfie, self-shot, handheld, close distance",
+        "mirror shot, reflection in a mirror",
+        "through glass, window shot, raindrops",
+        "water reflection, mirror surface",
+        "underwater shot, bubbles, floating hair",
+        "from inside an object, through a container"
+      ]
+    },
+    "Composition": {
+      "Patterns": [
+        "symmetrical composition, centered, balanced",
+        "rule of thirds composition",
+        "negative space, ample empty space, minimal",
+        "vanishing point, leading lines, depth",
+        "foreground framing, natural frame, layering",
+        "forced perspective, scale illusion"
       ]
     }
   }
